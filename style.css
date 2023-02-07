@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* The box-sizing CSS property sets how the total width and height of an element is calculated. */
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, san-serif;
+}
+
+html {
+  /* Makes the root font size be 10px */
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  /* The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the <gradient> data type, which is a special kind of <image>. */
+  background: linear-gradient(rgba(31, 7, 7, 0.7), rgba(0, 0, 0, 0.7));
+
+  /* The background image of the whole page or part of it can be changed using the background-image property. */
+  background-image: url(/images/bg.png);
+  background-size: cover;
+}
+
+.forms-wrapper {
+  /* The element is removed from the normal document flow, and no space is created for the element in the page layout */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  /* Repositions an element in the horizontal and/or vertical directions. */
+  transform: translate(-50%, -50%);
+}
+
+.forms-wrapper form {
+  width: 50rem;
+  height: 55rem;
+  background-color: rgb(226, 135, 67, 0.925);
+
+  /* The element behaves like a block element and lays out its content according to the flexbox model */
+  display: flex;
+
+  /* The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed). */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+}
+
+form a {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(40, 144, 108);
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 100% 0.5rem 0.5rem 0.5rem 100%;
+}
+
+form h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #fff;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input {
+  width: 25rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  background-color: 0.1rem solid #fff;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
