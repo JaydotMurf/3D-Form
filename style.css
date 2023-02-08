@@ -38,7 +38,7 @@ html {
 .forms-wrapper form {
   width: 50rem;
   height: 55rem;
-  background-color: rgb(226, 135, 67, 0.925);
+  background-color: rgb(40, 114, 108, 0.925);
 
   /* The element behaves like a block element and lays out its content according to the flexbox model */
   display: flex;
@@ -48,19 +48,29 @@ html {
   justify-content: space-around;
   align-items: center;
   box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+  position: absolute;
 }
 
 form a {
   position: absolute;
   top: 2rem;
-  left: 2rem;
   background-color: white;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(40, 144, 108);
   letter-spacing: 0.2rem;
+}
+
+.signup-btn {
+  left: 2rem;
   padding: 0.5rem 1rem 0.5rem 3rem;
-  border-radius: 100% 0.5rem 0.5rem 0.5rem 100%;
+  border-radius: 100% 0.5rem 0.5rem 100%;
+}
+
+.signin-btn {
+  right: 2rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  border-radius: 05rem 100% 100% 0.5rem;
 }
 
 form h2 {
@@ -80,8 +90,23 @@ form h2 {
   height: 3rem;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
-  background-color: 0.1rem solid #fff;
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+  border-radius: 5rem;
   color: #fff;
   letter-spacing: 0.1rem;
   outline: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.input-wrapper input[type="submit"] {
+  background-color: #fff;
+  color: rgba(40, 114, 108);
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
 }
